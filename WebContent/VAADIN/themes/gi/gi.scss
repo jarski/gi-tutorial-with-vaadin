@@ -1,0 +1,24 @@
+/* Import the reindeer theme.*/
+/* This only allows us to use the mixins defined in it and does not add any styles by itself. */
+@import "../reindeer/reindeer.scss";
+
+/* This contains all of your theme.*/
+/* If somebody wants to extend the theme she will include this mixin. */
+@mixin gi {
+  /* Include all the styles from the reindeer theme */
+  @include reindeer;
+
+  .inputarea {
+  	background-color: #e8e8f5;
+  }
+  .inputarea.v-margin-left {
+	padding-left: 12px;
+  }
+  
+  .outputarea {
+  	border-top: 1px solid #d8d8e5;
+  	border-left: 1px solid #d8d8e5;
+  	border-right: 1px solid #9898a5;
+  	border-bottom: 1px solid #9898a5;
+  }
+}
