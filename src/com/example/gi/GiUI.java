@@ -53,7 +53,7 @@ public class GiUI extends UI implements ClickListener {
 		HorizontalLayout inputArea = new HorizontalLayout(label, zipInput, button);
 		inputArea.setSpacing(true);
 		inputArea.setMargin(true);
-		inputArea.setStyleName("inputarea");
+		inputArea.addStyleName("inputarea");
 		inputArea.setWidth("100%");
 		inputArea.setHeight(null);
 		inputArea.setExpandRatio(button, 1);
@@ -68,7 +68,7 @@ public class GiUI extends UI implements ClickListener {
 		GridLayout outputArea = new GridLayout(2,2, createLabel("City"), cityField, createLabel("State"), stateField);
 		outputArea.setSpacing(true);
 		outputArea.setMargin(true);
-		outputArea.setStyleName("outputarea");
+		outputArea.addStyleName("outputarea");
 		outputArea.setSizeFull();
 		outputArea.setRowExpandRatio(1, 1);
 		outputArea.setColumnExpandRatio(1, 1);
